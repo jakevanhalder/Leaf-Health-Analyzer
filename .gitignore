@@ -1,0 +1,20 @@
+# Data
+data/
+
+# Model checkpoints
+models/*.pt
+models/*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
