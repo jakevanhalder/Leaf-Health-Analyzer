@@ -45,11 +45,19 @@ pip install -r requirements.txt
 kaggle datasets download -d abdallahalidev/plantvillage-dataset -p data/plantvillage --unzip
 ```
 
-2. **Plant Pathology 2021**: Download from the [Kaggle competition](https://www.kaggle.com/competitions/plant-pathology-2021-fgvc8) and extract to `data/plantpathology/`.
+2. **Plant Pathology 2021**: Download from the [Kaggle competition](https://www.kaggle.com/competitions/plant-pathology-2021-fgvc8) and extract to `data/plantpathology/`. You must accept the competition rules on the Kaggle website before downloading.
 
 ```bash
 kaggle competitions download -c plant-pathology-2021-fgvc8 -p data/plantpathology
 ```
+
+Then unzip the downloaded file:
+
+```powershell
+Expand-Archive data/plantpathology/plant-pathology-2021-fgvc8.zip -DestinationPath data/plantpathology
+```
+
+Expected structure after extraction: `data/plantpathology/train_images/<image>.jpg` and `data/plantpathology/train.csv`
 
 ## Quickstart
 
