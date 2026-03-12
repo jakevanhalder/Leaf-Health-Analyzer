@@ -24,9 +24,6 @@ from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
-# ---------------------------------------------------------------------------
-# Default transforms
-# ---------------------------------------------------------------------------
 
 def _build_transforms(img_size: int, augment: bool) -> transforms.Compose:
     """Return a torchvision transform pipeline.
@@ -54,10 +51,6 @@ def _build_transforms(img_size: int, augment: bool) -> transforms.Compose:
         transforms.Normalize(mean, std),
     ])
 
-
-# ---------------------------------------------------------------------------
-# PlantVillage dataset  (single-label, folder-per-class)
-# ---------------------------------------------------------------------------
 
 class PlantVillageDataset(Dataset):
     """Folder-per-class image dataset for PlantVillage.
@@ -151,10 +144,6 @@ def make_pv_loaders(
 
     return train_loader, val_loader, test_loader, classes
 
-
-# ---------------------------------------------------------------------------
-# Plant Pathology 2021 dataset  (multi-label, CSV)
-# ---------------------------------------------------------------------------
 
 class PlantPathologyDataset(Dataset):
     """Multi-label image dataset for Plant Pathology 2021.
