@@ -40,7 +40,16 @@ pip install -r requirements.txt
 ## Data
 
 1. **PlantVillage**: Download from [Kaggle](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) and extract to `data/plantvillage/`. Expected structure: `data/plantvillage/<class_name>/<image>.jpg`
+
+```bash
+kaggle datasets download -d abdallahalidev/plantvillage-dataset -p data/plantvillage --unzip
+```
+
 2. **Plant Pathology 2021**: Download from the [Kaggle competition](https://www.kaggle.com/competitions/plant-pathology-2021-fgvc8) and extract to `data/plantpathology/`.
+
+```bash
+kaggle competitions download -c plant-pathology-2021-fgvc8 -p data/plantpathology
+```
 
 ## Quickstart
 
