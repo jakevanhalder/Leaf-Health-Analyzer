@@ -96,6 +96,7 @@ def make_pv_loaders(
     test_frac: float = 0.15,
     num_workers: int = 2,
     seed: int = 42,
+    train_augment: bool = True,
 ) -> tuple[DataLoader, DataLoader, DataLoader, list[str]]:
     """Build train / val / test DataLoaders for PlantVillage (color subset).
 
@@ -129,7 +130,7 @@ def make_pv_loaders(
     )
 
     train_ds = PlantVillageDataset(train_samples, classes,
-                                   transform=_build_transforms(img_size, augment=True))
+                                   transform=_build_transforms(img_size, augment=train_augment))
     val_ds   = PlantVillageDataset(val_samples,   classes,
                                    transform=_build_transforms(img_size, augment=False))
     test_ds  = PlantVillageDataset(test_samples,  classes,
