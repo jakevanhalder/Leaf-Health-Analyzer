@@ -1,0 +1,6 @@
+tag,arch,freeze,augment,loss,best_val_acc,test_acc,elapsed_min
+Baseline (ResNet-50),resnet50,False,True,CrossEntropyLoss,0.9949668548981095,0.9965627301743187,17.060697774092358
+A: EfficientNet-B0,efficientnet_b0,False,True,CrossEntropyLoss,0.9965627301743187,0.995335133808004,18.423701024055482
+B: ResNet-50 (frozen backbone),resnet50,True,True,CrossEntropyLoss,0.9204517554628038,0.9213110729192242,13.206608891487122
+C: ResNet-50 (no augmentation),resnet50,False,False,CrossEntropyLoss,0.9959489319911613,0.9955806530812669,13.318281972408295
+"D: ResNet-50 (focal loss, gamma=2)",resnet50,False,True,FocalLoss,0.9916523447090596,0.9928799410753744,18.360700086752573
