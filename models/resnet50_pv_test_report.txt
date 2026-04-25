@@ -42,3 +42,6 @@ Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot     0.9610    0.9610    0.961
                                           accuracy                         0.9975      8146
                                          macro avg     0.9963    0.9958    0.9960      8146
                                       weighted avg     0.9976    0.9975    0.9975      8146
+
+Top-1 accuracy : 0.9975
+Top-3 accuracy : 0.9998
