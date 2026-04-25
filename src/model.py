@@ -1,5 +1,5 @@
 """
-src/model.py — model factory for leaf disease classification.
+Model factory for leaf disease classification.
 
 Supported architectures
 -----------------------

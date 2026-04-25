@@ -1,5 +1,5 @@
 """
-src/data.py — dataset classes and dataloader helpers.
+Dataset classes and dataloader helpers.
 
 Supports two dataset modes:
   - "plantvillage"  : folder-per-class structure (single-label)
